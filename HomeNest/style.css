@@ -1,12 +1,11 @@
-/* ============= HomeNest — Global Styles ============= */
 :root{
   --bg: #f8f5f2;
   --surface: #fff;
   --ink: #2b2b2b;
   --muted: #6b6b6b;
-  --brand: #0c6d3c;         /* deep green */
-  --brand-2: #084d29;       /* darker green */
-  --sand: #e7dccf;          /* sand-beige */
+  --brand: #0c6d3c;         
+  --brand-2: #084d29;       
+  --sand: #e7dccf;          
   --radius: 16px;
   --shadow: 0 8px 24px rgba(0,0,0,.08);
 }
@@ -22,7 +21,6 @@ body{
 
 .wrapper{max-width: 1200px;margin: 0 auto;padding: 0 20px;}
 
-/* ======= Header ======= */
 .topbar{background: #2f1a0e;color: #fff;}
 .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size: 24px;padding:14px 0;}
 .brand .dot{height:12px;width:12px;border-radius:50%;background:var(--brand)}
@@ -33,7 +31,6 @@ nav{display:flex;align-items:center;justify-content:space-between;gap:24px;}
 .cta{background: var(--brand); color:#fff; padding:10px 14px; border-radius: 12px; font-weight:600; box-shadow: var(--shadow);}
 .cta:hover{background:var(--brand-2)}
 
-/* ======= Hero with Slideshow ======= */
 .hero{background: linear-gradient(180deg, #efe7dc, #fff);padding: 28px 0 10px;border-bottom: 1px solid #eadfd2;}
 .hero-grid{display:grid;grid-template-columns: 1.1fr .9fr;gap:28px;align-items:center}
 .hero h1{margin:0 0 10px;font-size:38px;line-height:1.15}
@@ -43,7 +40,6 @@ nav{display:flex;align-items:center;justify-content:space-between;gap:24px;}
 .btn.ghost{background:#fff;color:#222;border:1px solid #ddd}
 .btn:hover{filter:brightness(.95)}
 
-/* Slideshow */
 .slideshow{position:relative;overflow:hidden;border-radius:var(--radius);height:320px;box-shadow:var(--shadow)}
 .slide{position:absolute;inset:0;opacity:0;animation: fade 18s infinite;background-size:cover;background-position:center}
 .slide:nth-child(1){animation-delay:0s}
@@ -52,7 +48,6 @@ nav{display:flex;align-items:center;justify-content:space-between;gap:24px;}
 @keyframes fade{0%{opacity:0}6%{opacity:1}28%{opacity:1}34%{opacity:0}100%{opacity:0}}
 .slide .caption{position:absolute;left:16px;bottom:14px;background:rgba(0,0,0,.55);color:#fff;padding:10px 12px;border-radius:10px;font-size:14px}
 
-/* ======= Cards, Grids, Filters ======= */
 .filterbar{background:#efe7dc;border:1px solid #e5d9c9;border-radius:14px;padding:14px;display:grid;grid-template-columns: 2fr 1fr 1fr auto;gap:10px}
 .filterbar input, .filterbar select{width:100%;padding:10px;border-radius:10px;border:1px solid #ddd;background:#fff}
 .grid{display:grid;grid-template-columns: repeat(4,1fr); gap:18px;margin:18px 0 30px}
@@ -64,20 +59,17 @@ nav{display:flex;align-items:center;justify-content:space-between;gap:24px;}
 .card p{margin:0;color:var(--muted);font-size:14px}
 .badge{display:inline-block;background: #eaf6ef;color:var(--brand-2);border-radius:999px;padding:6px 10px;font-size:12px;font-weight:700;margin-top:8px}
 
-/* ======= Sections ======= */
 .section{padding:36px 0}
 .section h2{margin:0 0 12px}
 .kb{display:grid;grid-template-columns: repeat(3,1fr);gap:18px}
 .kb .tile{background:var(--surface);border-radius:14px;box-shadow:var(--shadow);padding:16px}
 
-/* ======= Footer ======= */
 footer{background:#2f1a0e;color:#e8e8e8;margin-top:40px}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr; gap:20px;padding:30px 0;}
 footer a{color:#e8e8e8;text-decoration:none}
 footer a:hover{opacity:.85}
 .copy{border-top:1px solid rgba(255,255,255,.12);padding:14px 0;color:#cfcfcf;font-size:14px}
 
-/* ======= Responsive ======= */
 @media (max-width: 1000px){
   .grid{grid-template-columns: repeat(3,1fr)}
   .kb{grid-template-columns: repeat(2,1fr)}
@@ -92,7 +84,7 @@ footer a:hover{opacity:.85}
   .grid{grid-template-columns: 1fr}
   .footer-grid{grid-template-columns: 1fr}
 }
-/* Listing form styling */
+
 .listing-form {
   background: #fff;
   padding: 30px;
@@ -141,3 +133,4 @@ footer a:hover{opacity:.85}
   padding: 14px;
   font-size: 16px;
 }
+
